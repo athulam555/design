@@ -506,7 +506,8 @@ $(document).ready(function() {
         .clone(true)
         .addClass('filters')
         .appendTo('#table-style-hover thead');
-        
+       $( '.filters').find('th:last').css('display','none');
+    //    console.log(len);
     var table = $('#table-style-hover').DataTable({
         orderCellsTop: true,
         fixedHeader: true,
@@ -515,7 +516,7 @@ $(document).ready(function() {
  
             // For each column
             api
-                .columns([0,1,2])
+                .columns([0,1,2,3,4,5])
                 .eq(0)
                 .each(function (colIdx) {
                     // Set the header cell to contain the input element
@@ -523,7 +524,7 @@ $(document).ready(function() {
                         $(api.column(colIdx).header()).index()
                     );
                     var title = $(cell).text();
-                    $(cell).html('<input type="text" class="form-control"   placeholder="' + title + '" />');
+                    $(cell).html('<input type="text" class="form-control  data_search"   placeholder="' + title + '" />');
  
                     // On every keypress in this input
                     $(
