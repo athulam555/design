@@ -23,4 +23,42 @@ $(document).ready(function() {
         $('.jqvmap-country').html(country + ' - ' + '$' + sales.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
     }
     });
+
+    $("#searchButtonEstablished").click(function () {
+        var rows = $("#table_body").find("tr").hide();
+        rows.filter(":contains('Established / Pending donor funds')").show();
+     });
+
+     $("#searchButtonOngoing").click(function () {
+        var rows = $("#table_body").find("tr").hide();
+        rows.filter(":contains('Ongoing')").show();
+     });
+
+     $("#searchButtonClosed").click(function () {
+        var rows = $("#table_body").find("tr").hide();
+        rows.filter(":contains('Closed')").show();
+     });
+
+     $("#searchButtonClosure").click(function () {
+        var rows = $("#table_body").find("tr").hide();
+        rows.filter(":contains('Pending Closure')").show();
+     });
+
+     // remove the filter on button click
+        $("#removeFilter").click(function () {
+            $("#table_body").find("tr").show();
+        });
+    
+    //show remove filter button when there is a filter
+    $("#searchButtonEstablished, #searchButtonOngoing, #searchButtonClosed, #searchButtonClosure").click(function () {
+        if ($("#table_body").find("tr:visible").length > 0) {
+            $("#removeFilter").show();
+        }
+        //remove filter when clicked on remove filter button
+        $("#removeFilter").click(function () {
+            $("#table_body").find("tr").show();
+            $("#removeFilter").hide();
+        });
+    });
+
 });
