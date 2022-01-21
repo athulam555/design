@@ -14870,6 +14870,12 @@ code {
 .panel-box-content {
     padding: 0px 0px 10px 0px;
 }
+.cursor-pointer {
+    cursor: pointer;
+}
+.display-none {
+    display: none;
+}
 .responsive{
     overflow-x: scroll;
 }
