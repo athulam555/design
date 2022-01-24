@@ -511,6 +511,18 @@ $(document).ready(function() {
     var table = $('#table-style-hover').DataTable({
         orderCellsTop: true,
         fixedHeader: true,
+        dom: 'Bfrtip',
+        buttons: [
+            {
+                extend: 'pdf',
+                exportOptions: {
+                     columns: [0,1,2,3,4,5]
+                 }
+            },
+            {
+                extend: 'excel',
+            }         
+         ] ,
         initComplete: function () {
             var api = this.api();
  
