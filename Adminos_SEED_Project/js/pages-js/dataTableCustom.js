@@ -755,4 +755,53 @@ $(document).ready(function() {
         }
     });
 
+    var populateProjects = function (projects) {
+        if ($.fn.DataTable.isDataTable('#my_table')) {
+            $('#my_table').DataTable().destroy();
+        }
+
+        $('#my_table').DataTable({
+            'processing': true,
+            'aaData': projects,
+            'aoColumns': [
+                {
+                    'data': 'ShortId' ,
+                    'render': function(data, type, row, meta) {
+                        return '<a href="' +$('#divProjectList').data('projecturl') + '/' +
+                            row.Id +
+                            '" target="_blank" title="Click to see the project" style="color:#389af0;">' +
+                            row.ShortId +
+                            '</a>';
+                    }
+                },
+                { 'data': 'InternalProjectCode' },
+                {
+                    'data': 'Title',
+
+                    'render': function (data, type, row, meta) {
+                        if (row.Title.length > 35) {
+                            return row.Title.substring(0, 35) + '...';
+                        }
+                        else {
+                            return row.Title;
+                        }
+                    }
+                },
+                { 'data': 'DivisionName' },
+                { 'data': 'ProjectManager' },
+                { 'data': 'Sponsor' }
+            ],
+            dom: 'Bfrti',
+            buttons: [
+                { extend: 'excel', text: 'Export to excel' }
+            ],
+            "oLanguage": {
+                "sSearch": "Filter"
+            },
+            scrollY: '50vh',
+            scrollCollapse: true,
+            paging: false
+        });
+    };
+
 });
