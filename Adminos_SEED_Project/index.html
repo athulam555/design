@@ -330,6 +330,12 @@
                                                         <option value="USA">USA</option>
                                                     </select>
                                                 </div>
+                                                <div class="col-lg-3 text-right">
+                                                    <button type="button" id="fund_chart"
+                                                        class="btn btn-danger badge-danger">Fund</button>
+                                                    <button type="button" id="count_chart"
+                                                        class="btn btn-danger  badge-danger">Count</button>
+                                                </div>
                                             </div>
 
                                             <canvas id="chartjs_bar">
@@ -399,7 +405,8 @@
                                     <div class="row">
                                         <div class="col-12 statistic-box">
                                             <h6 class="text-white">Donor
-                                                <i class="fa fa-map-o float-right" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-1']);"></i>
+                                                <i class="fa fa-map-o float-right"
+                                                    onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-1']);"></i>
                                             </h6>
                                         </div>
                                     </div>
@@ -716,7 +723,7 @@
     <!--Custom JS-->
 
     <script src="js/AdminosJS.js"></script>
-    <script src="js/pages-js/dashboard.js"></script>
+    <!-- <script src="js/pages-js/dashboard.js"></script> -->
     <script src="js/dashboardv1.js"></script>
 
 
@@ -905,85 +912,200 @@
             populateProjects(data.filter(function (value) { return value[5] === 'Pending Closure'; }));
         })
 
-        if ($('#chartjs_bar').length) {
-            var ctx = document.getElementById("chartjs_bar").getContext('2d');
-            var myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ["India", "USA", "Brazil", "Australia", "Canada", "South Africa", "UK", "Pakistan"],
-                    datasets: [{
-                        label: '2020',
-                        data: [50, 19, 3, 17, 28, 24, 7, 11, 13],
-                        backgroundColor: "#17a2b8",
-                        borderColor: "#17a2b8",
-                        borderWidth: 1
-                    }, {
-                        label: '2021',
-                        data: [30, 29, 5, 5, 20, 3, 10, 15, 14],
-                        backgroundColor: "#FF292D",
-                        borderColor: "#FF292D",
-                        borderWidth: 1
-                    }, {
-                        label: '2022',
-                        data: [24, 15, 10, 8, 23, 18, 13, 17, 27],
-                        backgroundColor: "#4E3F6C",
-                        borderColor: "#4E3F6C",
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: true,
-                    scales: {
-                        yAxes: [{
-                        }]
-                    },
-                    legend: {
-                        display: true,
-                        position: 'top',
+        // if ($('#chartjs_bar').length) {
+        //     var ctx = document.getElementById("chartjs_bar").getContext('2d');
+        //     var myChart = new Chart(ctx, {
+        //         type: 'bar',
+        //         data: {
+        //             labels: ["India", "USA", "Brazil", "Australia", "Canada", "South Africa", "UK", "Pakistan"],
+        //             datasets: [{
+        //                 label: '2020',
+        //                 data: [50, 19, 3, 17, 28, 24, 7, 11, 13],
+        //                 backgroundColor: "#17a2b8",
+        //                 borderColor: "#17a2b8",
+        //                 borderWidth: 1
+        //             }, {
+        //                 label: '2021',
+        //                 data: [30, 29, 5, 5, 20, 3, 10, 15, 14],
+        //                 backgroundColor: "#FF292D",
+        //                 borderColor: "#FF292D",
+        //                 borderWidth: 1
+        //             }, {
+        //                 label: '2022',
+        //                 data: [24, 15, 10, 8, 23, 18, 13, 17, 27],
+        //                 backgroundColor: "#4E3F6C",
+        //                 borderColor: "#4E3F6C",
+        //                 borderWidth: 1
+        //             }]
+        //         },
+        //         options: {
+        //             responsive: true,
+        //             maintainAspectRatio: true,
+        //             scales: {
+        //                 yAxes: [{
+        //                 }]
+        //             },
+        //             legend: {
+        //                 display: true,
+        //                 position: 'top',
 
-                        labels: {
-                            fontColor: '#71748d',
-                            fontFamily: 'Circular Std Book',
-                            fontSize: 14,
-                        }
-                    },
-                    scales: {
-                        xAxes: [{
-                            ticks: {
-                                fontSize: 14,
-                                fontFamily: 'Circular Std Book',
-                                fontColor: '#71748d',
-                            }
-                        }],
-                        yAxes: [{
-                            ticks: {
-                                fontSize: 14,
-                                fontFamily: 'Circular Std Book',
-                                fontColor: '#71748d',
-                            }
-                        }]
-                    }
-                }
-            });
-        }
+        //                 labels: {
+        //                     fontColor: '#71748d',
+        //                     fontFamily: 'Circular Std Book',
+        //                     fontSize: 14,
+        //                 }
+        //             },
+        //             scales: {
+        //                 xAxes: [{
+        //                     ticks: {
+        //                         fontSize: 14,
+        //                         fontFamily: 'Circular Std Book',
+        //                         fontColor: '#71748d',
+        //                     }
+        //                 }],
+        //                 yAxes: [{
+        //                     ticks: {
+        //                         fontSize: 14,
+        //                         fontFamily: 'Circular Std Book',
+        //                         fontColor: '#71748d',
+        //                     }
+        //                 }]
+        //             }
+        //         }
+        //     });
+        // }
 
         // $(document).ready(function () { 
         //     myChart.data.labels.push("Pakistan");
         //     myChart.update()
         //  })
 
-        $('#chart_country').on('change', function (params) {
-            // myChart.data.labels.pop();
-            // myChart.data.datasets.forEach((dataset) => {
-            //     dataset.data.pop();
-            // });
-            // myChart.update();
+        // function addval() {
+        //     console.log('ee');
+        //     val = $('#chart_country').val();
+        //     myChart.data.labels.push(val);
+        //     myChart.update()
+        // }
 
-            // val = $('#chart_country').val();
-            // myChart.data.labels.push(val);
-            // myChart.update()
-        })
+        // $('#chart_country').on('change', function (params) {
+        //     // myChart.data.labels.pop();
+        //     // myChart.data.datasets.forEach((dataset) => {
+        //     //     dataset.data.pop();
+        //     // });
+        //     // myChart.update();
+
+        //     val = $('#chart_country').val();
+        // })
+
+
+        var country = ["India", "USA", "Brazil", "Australia", "Canada", "South Africa", "UK", "Pakistan"];
+        var data_2020 = [50, 19, 3, 17, 28, 24, 7, 11, 13];
+        var data_2021 = [30, 29, 5, 5, 20, 3, 10, 15, 14];
+        var data_2022 = [24, 15, 10, 8, 23, 18, 13, 17, 27];
+
+        var ctx = document.getElementById("chartjs_bar").getContext('2d');
+        var config = {
+            type: 'bar',
+            data: {
+                labels: country,
+                datasets: [{
+                    label: '2020',
+                    data: data_2020,
+                    backgroundColor: "#17a2b8",
+                    borderColor: "#17a2b8",
+                    borderWidth: 1
+                }, {
+                    label: '2021',
+                    data: data_2021,
+                    backgroundColor: "#FF292D",
+                    borderColor: "#FF292D",
+                    borderWidth: 1
+                }, {
+                    label: '2022',
+                    data: data_2022,
+                    backgroundColor: "#4E3F6C",
+                    borderColor: "#4E3F6C",
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    yAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Fund'
+                        }
+                    }],
+                    xAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Countries'
+                        }
+                    }]
+                },
+                legend: {
+                    display: true,
+                    position: 'top',
+                    labels: {
+                        filter: function (legendItem, data) {
+                            return legendItem.index != 1
+                        }
+                    }
+                },
+                "animation": {
+                    "duration": 1,
+                    "onComplete": function () {
+                        var chartInstance = this.chart,
+                            ctx = chartInstance.ctx;
+
+                        ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'bottom';
+
+                        this.data.datasets.forEach(function (dataset, i) {
+                            var meta = chartInstance.controller.getDatasetMeta(i);
+                            meta.data.forEach(function (bar, index) {
+                                var data = dataset.data[index];
+                                ctx.fillText(data, bar._model.x, bar._model.y - 5);
+                            });
+                        });
+                    }
+                },
+            }
+        }
+
+        var mychart = new Chart(ctx, config);
+
+        $("#fund_chart").click(function () {
+            $(this).addClass('active')
+            $('#count_chart').removeClass('active')
+            var data = mychart.config.data;
+            data.datasets[0].data = data_2020;
+            data.datasets[1].data = data_2021;
+            data.datasets[2].data = data_2022;
+            data.labels = country;
+            mychart.config.options.scales.yAxes[0].scaleLabel.labelString = 'Fund'
+            mychart.update();
+        });
+
+        $("#count_chart").click(function () {
+            $(this).addClass('active')
+            $('#fund_chart').removeClass('active')
+            var country = ["India", "USA", "Brazil", "Australia", "Canada", "South Africa", "UK", "Pakistan"];
+            var data_2020 = [250, 129, 113, 127, 218, 124, 117, 121, 133];
+            var data_2021 = [330, 229, 125, 155, 220, 321, 110, 115, 130];
+            var data_2022 = [124, 125, 110, 118, 213, 218, 113, 127, 227];
+            var data = mychart.config.data;
+            data.datasets[0].data = data_2020;
+            data.datasets[1].data = data_2021;
+            data.datasets[2].data = data_2022;
+            data.labels = country;
+            mychart.config.options.scales.yAxes[0].scaleLabel.labelString = 'Count'
+            mychart.update();
+        });
+
 
     </script>
 </body>
