@@ -192,6 +192,7 @@
                             <div class="row status">
 
                                 <!--Project Status-->
+
                                 <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                                     <div class="panel-box statistic-bg-purple radius established_tab">
                                         <div class="panel-box-content">
@@ -273,127 +274,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row status">
-                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-2">
-                                    <div class="panel-box radius"
-                                        style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
-                                        <div class="panel-box-content">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box">
-                                                    <h6 class="text-white">Donor <i class="fa fa-map-o float-right"></i>
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 statistic-footer">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box" id="Title0">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-2">
-                                    <div class="panel-box  radius"
-                                        style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
-                                        <div class="panel-box-content">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box">
-                                                    <h6 class="text-white">Manager List <i
-                                                            class="fa fa-map-o float-right"></i></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 statistic-footer">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box" id="Start-Date1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-2">
-                                    <div class="panel-box  radius"
-                                        style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
-                                        <div class="panel-box-content">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box">
-                                                    <h6 class="text-white">Funding Source <i
-                                                            class="fa fa-map-o float-right"></i></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 statistic-footer">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box" id="End-Date2">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-2">
-                                    <div class="panel-box radius"
-                                        style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
-                                        <div class="panel-box-content">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box">
-                                                    <h6 class="text-white">Activity Type <i
-                                                            class="fa fa-map-o float-right"></i></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 statistic-footer">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box" id="Budget3">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-2">
-                                    <div class="panel-box  radius"
-                                        style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
-                                        <div class="panel-box-content">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box">
-                                                    <h6 class="text-white">Target Countries <i
-                                                            class="fa fa-map-o float-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></i></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 statistic-footer">
-                                            <div class="row">
-                                                <div class="col-12 statistic-box" id="Countries4">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- End Project Status -->
 
                             <!--Recent Project Table-->
                             <div class="panel-box">
                                 <div class="panel-box-title">
                                     <h5>Projects List</h5>
-                                    <span></span>
-                                    <div class="dropdown" style="float: right;margin-top: -2px;margin-left: 10px;">
-                                        <button class="btn btn-danger badge badge-danger dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Download
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right"
-                                            aria-labelledby="dropdownMenuButton">
-                                            <a class="dt-button buttons-pdf buttons-html5" tabindex="0"
-                                                aria-controls="table-style-hover" href="#"><span>PDF</span></a>
-                                            <a class="dt-button buttons-excel buttons-html5" tabindex="0"
-                                                aria-controls="table-style-hover" href="#"><span>Excel</span></a>
-                                        </div>
-                                    </div>
-                                    <button type="button" id="removeFilter"
-                                        class="btn btn-success badge badge-success float-right display-none">Clear
-                                        Filter</button>
+                                    <span style="float: right;">
+                                        <button type="button" class="btn btn-success badge badge-danger float-right"
+                                            data-target="#bounce-right" data-toggle="modal">Filter</button>
+                                    </span>
                                 </div>
                                 <div class="panel-box-content p-3">
                                     <div class="dt-responsive table-responsive">
@@ -418,658 +309,203 @@
 
                             <!-- Total Earning And Products Sales-->
                             <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                     <div class="panel-box">
                                         <div class="panel-box-title">
-                                            <h5>Projects and Sustainable Development Goals</h5>
+                                            <h5>Total fund Spend by Each Country</h5>
                                             <div class="panel-box-tools">
                                                 <a class="collapse-link">
                                                     <i class="fa fa-chevron-up"></i>
                                                 </a>
-                                                <!-- <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                                                    <i class="fa fa-wrench"></i>
-                                                </a>
-                                                <ul class="dropdown-menu dropdown-user dropdown-menu-right">
-                                                    <li><a href="#">Config option 1</a></li>
-                                                    <li><a href="#">Config option 2</a></li>
-                                                </ul>
-                                                <a class="close-link">
-                                                    <i class="fa fa-times"></i>
-                                                </a> -->
                                             </div>
                                         </div>
                                         <div class="panel-box-content">
-                                            <div id="morris-total-earning"></div>
-                                        </div>
-                                        <div class="panel-box-footer">
-                                            <p class="display-7 font-weight-bold">
-                                                <span class="text-primary d-inline-block">$76,000</span>
-                                                <span class="text-success pull-right">+49.45%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
-
-                                    <!-- Basic Map With Markers start -->
-                                    <div class="panel-box">
-                                        <div class="top_menu panel-box-title">
-                                            <h5>Projects and Beneficiary Countries</h5>
-                                            <div class="panel-box-tools">
-                                                <a class="collapse-link">
-                                                    <i class="fa fa-chevron-up"></i>
-                                                </a>
-                                                <!-- <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                                                        <i class="fa fa-wrench"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu dropdown-user dropdown-menu-right">
-                                                        <li><a href="#">Config option 1</a></li>
-                                                        <li><a href="#">Config option 2</a></li>
-                                                    </ul>
-                                                    <a class="close-link">
-                                                        <i class="fa fa-times"></i>
-                                                    </a> -->
+                                            <div class="row" style="margin-top: 10px;">
+                                                <div class="col-lg-3 text-center" style="margin: auto;">
+                                                    <select id="chart_country"
+                                                        class="select2 form-control form-control-round">
+                                                        <option value="India">India</option>
+                                                        <option value="Pakistan">Pakistan</option>
+                                                        <option value="UK">UK</option>
+                                                        <option value="USA">USA</option>
+                                                    </select>
+                                                </div>
                                             </div>
+
+                                            <canvas id="chartjs_bar">
                                         </div>
-                                        <div class="panel-box-content p-3 bg-sky-line-blue">
-                                            <div id="vmap" style="width:100%; height:370px;"></div>
+                                    </div>
+                                    <div class="panel-box-footer">
+                                        <p class="display-7 font-weight-bold">
+                                            <span class="text-primary d-inline-block">$76,000</span>
+                                            <span class="text-success pull-right">+49.45%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                                <!-- Basic Map With Markers start -->
+                                <div class="panel-box">
+                                    <div class="top_menu panel-box-title">
+                                        <h5>Projects and Beneficiary Countries</h5>
+                                        <div class="panel-box-tools">
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+
                                         </div>
+                                    </div>
+                                    <div class="panel-box-content p-3 bg-sky-line-blue">
+                                        <div id="vmap" style="width:100%; height:370px;"></div>
+                                    </div>
 
-                                    </div>
-                                    <!-- Basic Map With Markers end -->
                                 </div>
-
-
-                            </div>
-                        </div>
-                        <div class="footer">
-                            <div>
-                                <strong>&copy; 2022</strong>&nbsp;<a href="#" class="text-dark">Teknokraaft Info Systems
-                                    Pvt Ltd.</a>
+                                <!-- Basic Map With Markers end -->
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="notification-menu" class="sticky-top">
-            <div class="notification-menu p-3 notify-scroll">
-                <div class="notification-heading">
-                    <h6 class="menu-title">Messages <a href="#" class="float-right ml-auto" id="close-notification"><i
-                                class="feather icon-x"></i></a></h6>
-                </div>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <div class="dropdown-messages-box">
-                            <a href="profile.html" class="float-left pt-1">
-                                <img alt="image" class="img-circle" src="img/2.jpg">
-                            </a>
-                            <div class="media-body">
-                                <small class="float-right">46h ago</small>
-                                <strong>John Loreipsum</strong> started following <strong>Anna Smith</strong>. <br>
-                                <small class="text-muted msg-date">3 days ago at 7:58 pm - 01.24.2019</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="nav-item">
-                        <div class="dropdown-messages-box">
-                            <a href="profile.html" class="float-left pt-1">
-                                <img alt="image" class="img-circle" src="img/users/user1.jpg">
-                            </a>
-                            <div class="media-body ">
-                                <small class="float-right text-navy">5h ago</small>
-                                <strong>Chris jackson</strong> started following <strong>Anna Smith</strong>. <br>
-                                <small class="text-muted msg-date">3 days ago at 7:58 pm - 01.24.2019</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="nav-item">
-                        <div class="dropdown-messages-box">
-                            <a href="profile.html" class="float-left pt-1">
-                                <img alt="image" class="img-circle" src="img/users/user2.jpg">
-                            </a>
-                            <div class="media-body ">
-                                <small class="float-right">23h ago</small>
-                                <strong>Monica Smith</strong> love <strong>Carlos Smith</strong>. <br>
-                                <small class="text-muted msg-date">3 days ago at 7:58 pm - 01.24.2019</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="nav-item">
-                        <div class="dropdown-messages-box">
-                            <a href="profile.html" class="float-left pt-1">
-                                <img alt="image" class="img-circle" src="img/users/user3.jpg">
-                            </a>
-                            <div class="media-body ">
-                                <small class="float-right text-navy">5h ago</small>
-                                <strong>Chris jackson</strong> started following <strong>Anna Smith</strong>. <br>
-                                <small class="text-muted msg-date">3 days ago at 7:58 pm - 01.24.2019</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="nav-item">
-                        <div class="dropdown-messages-box">
-                            <a href="profile.html" class="float-left pt-1">
-                                <img alt="image" class="img-circle" src="img/users/user4.jpg">
-                            </a>
-                            <div class="media-body ">
-                                <small class="float-right text-navy">5h ago</small>
-                                <strong>Chris jackson</strong> started following <strong>Anna Smith</strong>. <br>
-                                <small class="text-muted msg-date">3 days ago at 7:58 pm - 01.24.2019</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="nav-item">
-                        <div class="dropdown-messages-box">
-                            <a href="profile.html" class="float-left pt-1">
-                                <img alt="image" class="img-circle" src="img/users/user5.jpg">
-                            </a>
-                            <div class="media-body ">
-                                <small class="float-right text-navy">5h ago</small>
-                                <strong>Chris jackson</strong> started following <strong>Anna Smith</strong>. <br>
-                                <small class="text-muted msg-date">3 days ago at 7:58 pm - 01.24.2019</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="nav-item">
-                        <div class="dropdown-messages-box">
-                            <a href="profile.html" class="float-left pt-1">
-                                <img alt="image" class="img-circle" src="img/users/user6.jpg">
-                            </a>
-                            <div class="media-body ">
-                                <small class="float-right text-navy">5h ago</small>
-                                <strong>Chris jackson</strong> started following <strong>Anna Smith</strong>. <br>
-                                <small class="text-muted msg-date">3 days ago at 7:58 pm - 01.24.2019</small>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="notification-footer mb-5 text-center">
-                    <h6 class="btn btn-link btn-sm btn-block"><i class="fa fa-spinner fa-spin"></i> Loading More...</h6>
-                </div>
-            </div>
-        </div>
-        <div id="chat" class="sticky-top">
-            <div class="chat-messages">
-                <div class="search-friends">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="search-users" placeholder="Search by name...">
-                        <div class="input-group-append">
-                            <button class="btn btn-default show-chat-list" type="submit" data-toggle="tooltip"
-                                title="Close Chat List">
-                                <i class="feather icon-x-circle"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="online-friends">
-                    <div class="friends  show-chat-msg">
-                        <img alt="image" class="img-friends" src="img/2.jpg">
-                        <strong class="username pt-3">John Carlos</strong>
-                        <div class="online float-right"><i class="fa fa-circle text-success" data-toggle="tooltip"
-                                title="Online"></i></div>
-                    </div>
-                    <div class="friends  show-chat-msg">
-                        <img alt="image" class="img-friends" src="img/9.jpg">
-                        <strong class="username pt-3">Andrew Smith</strong>
-                        <div class="online float-right"><i class="fa fa-circle text-success" data-toggle="tooltip"
-                                title="Online"></i></div>
-                    </div>
-                    <div class="friends  show-chat-msg">
-                        <img alt="image" class="img-friends" src="img/users/user1.jpg">
-                        <strong class="username pt-3">Mark Albert</strong>
-                        <div class="online float-right"><i class="fa fa-circle text-success" data-toggle="tooltip"
-                                title="Online"></i></div>
-                    </div>
-                    <div class="friends  show-chat-msg">
-                        <img alt="image" class="img-friends" src="img/users/user2.jpg">
-                        <strong class="username pt-3">Harry Kim</strong>
-                        <div class="online float-right"><i class="fa fa-circle text-success" data-toggle="tooltip"
-                                title="Online"></i></div>
-                    </div>
-                    <div class="friends  show-chat-msg">
-                        <img alt="image" class="img-friends" src="img/users/user5.jpg">
-                        <strong class="username pt-3">Nina Stephan</strong>
-                        <div class="online float-right"><i class="fa fa-circle text-warning" data-toggle="tooltip"
-                                title="Away"></i></div>
-                    </div>
-                    <div class="friends  show-chat-msg">
-                        <img alt="image" class="img-friends" src="img/users/user6.jpg">
-                        <strong class="username pt-3">Bill Simth</strong>
-                        <div class="online float-right"><i class="fa fa-circle text-muted" data-toggle="tooltip"
-                                title="Offline"></i></div>
-                    </div>
-                    <div class="friends  show-chat-msg">
-                        <img alt="image" class="img-friends" src="img/users/user4.jpg">
-                        <strong class="username pt-3">Delos Frank</strong>
-                        <div class="online float-right"><i class="fa fa-circle text-success" data-toggle="tooltip"
-                                title="Online"></i></div>
-                    </div>
-                    <div class="friends  show-chat-msg">
-                        <img alt="image" class="img-friends" src="img/users/user3.jpg">
-                        <strong class="username pt-3">Danny Larry</strong>
-                        <div class="online float-right"><i class="fa fa-circle text-warning" data-toggle="tooltip"
-                                title="Away"></i></div>
-                    </div>
-                </div>
-                <div class="des">
-                    <strong>Notes:</strong>
-                    <p class="small">Online friends panel is just for demo purpose and it dose not have any javascript
-                        configuration script, you can add more configuration buttons to other settings panel. </p>
-                </div>
-            </div>
-        </div>
-        <div id="chat-messages" class="sticky-top">
-            <div class="chat-messages">
-                <div class="search-friends text-center">
-                    <i class="feather icon-arrow-right float-left close-chat-msg" data-toggle="tooltip"
-                        title="Close Messages"></i>
-                    <strong class="username pt-3">John Carlos</strong>
-                </div>
-                <div class="online-friends-chat">
-                    <div class="friend-replay">
-                        <div class="user-pic">
-                            <img alt="image" class="img-friends" src="img/2.jpg">
-                        </div>
-                        <div class="user-msg">
-                            <p class="chat-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="your-replay">
-                        <div class="your-pic">
-                            <img alt="image" class="img-friends" src="img/users/user2.jpg">
-                        </div>
-                        <div class="your-msg">
-                            <p class="chat-content bg-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="friend-replay">
-                        <div class="user-pic">
-                            <img alt="image" class="img-friends" src="img/2.jpg">
-                        </div>
-                        <div class="user-msg">
-                            <p class="chat-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="your-replay">
-                        <div class="your-pic">
-                            <img alt="image" class="img-friends" src="img/users/user2.jpg">
-                        </div>
-                        <div class="your-msg">
-                            <p class="chat-content bg-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="friend-replay">
-                        <div class="user-pic">
-                            <img alt="image" class="img-friends" src="img/2.jpg">
-                        </div>
-                        <div class="user-msg">
-                            <p class="chat-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="your-replay">
-                        <div class="your-pic">
-                            <img alt="image" class="img-friends" src="img/users/user2.jpg">
-                        </div>
-                        <div class="your-msg">
-                            <p class="chat-content bg-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="chat-input">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="quick-chat" placeholder="Enter Message">
-                        <div class="input-group-append">
-                            <button class="btn btn-default" type="submit">
-                                <i class="feather icon-navigation"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="selector-toggle">
-            <a href="javascript:void(0)" class="right-sidebar-toggle"><i
-                    class="feather icon-settings rotate-icon"></i></a>
-        </div>
-        <div id="right-sidebar" class="animated">
-            <div class="sidebar-container">
-                <ul class="nav nav-tabs navs-3 setting-menu default-theme" id="mySidenav">
-                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-1"> Skin</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-2"><i
-                                class="fa fa-cogs"></i></a></li>
-                </ul>
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane active">
-                        <div class="sidebar-title">
-                            <h5> <i class="fa fa-th" aria-hidden="true"></i> Select Skins</h5>
-                            <small>You have 14 Skin Colors.</small>
-                        </div>
-                        <br>
-                        <div class="color-theme-panel">
-                            <div class="themes-scroll">
-                                <h6>Sidebar Layout</h6>
-                                <div class="theme-color">
-                                    <a class="btn-sidebar-theme" data-myattr="white-theme" href="#">
-                                        <div class="sidebar-white"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="default-theme" href="#">
-                                        <div class="sidebar-colored"></div>
-                                    </a>
-                                </div>
-                                <h6>Top Navbar</h6>
-                                <div class="theme-color">
-                                    <a class="btn-header-theme" data-myattr="topNav-white-theme" href="#">
-                                        <div class="theme-29"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-default-theme" href="#">
-                                        <div class="theme-5"></div>
-                                    </a>
-                                </div>
-                                <h6>Header Color</h6>
-                                <div class="theme-color">
-                                    <a class="btn-header-theme" data-myattr="topNav-blue-theme" href="#">
-                                        <div class="theme-1"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-brown-theme" href="#">
-                                        <div class="theme-2"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-dark-gray-theme" href="#">
-                                        <div class="theme-3"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-dark-pink-theme" href="#">
-                                        <div class="theme-4"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-default-theme" href="#">
-                                        <div class="theme-5"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-gray-theme" href="#">
-                                        <div class="theme-6"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-green-theme" href="#">
-                                        <div class="theme-7"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-light-blue-theme" href="#">
-                                        <div class="theme-8"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-light-green-theme" href="#">
-                                        <div class="theme-9"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-orange-theme" href="#">
-                                        <div class="theme-10"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-purple-theme" href="#">
-                                        <div class="theme-11"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-red-theme" href="#">
-                                        <div class="theme-12"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-sky-theme" href="#">
-                                        <div class="theme-13"></div>
-                                    </a>
-                                    <a class="btn-header-theme" data-myattr="topNav-yellow-theme" href="#">
-                                        <div class="theme-14"></div>
-                                    </a>
-                                </div>
-                                <h6>Sidebar Color</h6>
-                                <div class="theme-color">
-                                    <a class="btn-sidebar-theme" data-myattr="blue-theme" href="#">
-                                        <div class="theme-15"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="brown-theme" href="#">
-                                        <div class="theme-16"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="dark-gray-theme" href="#">
-                                        <div class="theme-17"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="dark-pink-theme" href="#">
-                                        <div class="theme-18"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="default-theme" href="#">
-                                        <div class="theme-19"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="gray-theme" href="#">
-                                        <div class="theme-20"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="green-theme" href="#">
-                                        <div class="theme-21"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="light-blue-theme" href="#">
-                                        <div class="theme-22"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="light-green-theme" href="#">
-                                        <div class="theme-23"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="orange-theme" href="#">
-                                        <div class="theme-24"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="purple-theme" href="#">
-                                        <div class="theme-25"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="red-theme" href="#">
-                                        <div class="theme-26"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="sky-theme" href="#">
-                                        <div class="theme-27"></div>
-                                    </a>
-                                    <a class="btn-sidebar-theme" data-myattr="yellow-theme" href="#">
-                                        <div class="theme-28"></div>
-                                    </a>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="sidebar-content">
-                                <strong>Notes:</strong>
-                                <div class="small">
-                                    Other Settings is just for demo purpose and it dose not have any javascript
-                                    configuration script, you can add more
-                                    configuration buttons to other settings panel.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-2" class="tab-pane">
-                        <div class="sidebar-title">
-                            <h5><i class="fa fa-gears"></i> Settings</h5>
-                            <small>You have 12 configuration settings options.</small>
-                        </div>
-                        <div class="setting-scroll">
-                            <div class="setings-item">
-                                <span>
-                                    Fix Navbar
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="fixed-top-navbar">
-                                        <label class="onoffswitch-label" for="fixed-top-navbar">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    Mini Sidebar Menu
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="mini-sidebar-menu">
-                                        <label class="onoffswitch-label" for="mini-sidebar-menu">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    RTL Navbar
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="RTL-layout">
-                                        <label class="onoffswitch-label" for="RTL-layout">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    Show Notifications
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="show-notifications">
-                                        <label class="onoffswitch-label" for="show-notifications">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    Fixed Footer
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="fixed-footer">
-                                        <label class="onoffswitch-label" for="fixed-footer">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    Disable Quick Chat
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="disableChat">
-                                        <label class="onoffswitch-label" for="disableChat">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    Collapsed Panels
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="collapsed-panels">
-                                        <label class="onoffswitch-label" for="collapsed-panels">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-header">
-                                <h5><i class="fa fa-server"></i> Other Settings</h5>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    Enable History
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="example9">
-                                        <label class="onoffswitch-label" for="example9">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    Offline Users
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="example10">
-                                        <label class="onoffswitch-label" for="example10">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    Global Search
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="example11">
-                                        <label class="onoffswitch-label" for="example11">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                                    Update Everyday
-                                </span>
-                                <div class="switch float-right">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
-                                            id="example12">
-                                        <label class="onoffswitch-label" for="example12">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar-content">
-                            <strong>Notes:</strong>
-                            <div class="small">
-                                Other Settings is just for demo purpose and it dose not have any javascript
-                                configuration
-                                script, you can add more
-                                configuration buttons to other settings panel.
-                            </div>
+                    <div class="footer">
+                        <div>
+                            <strong>&copy; 2022</strong>&nbsp;<a href="#" class="text-dark">Teknokraaft Info Systems
+                                Pvt Ltd.</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- filter modal -->
+
+    <div tabindex="-1" class="modal fade" id="bounce-right" role="dialog" aria-hidden="true"
+        aria-labelledby="bounce-rightLabel" style="display: none;" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content animated bounceInRight">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bounce-rightLabel">Filter Searches
+                    </h5>
+                    <button class="close" aria-label="Close" type="button" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row status">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="panel-box radius"
+                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                <div class="panel-box-content">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box">
+                                            <h6 class="text-white">Donor
+                                                <i class="fa fa-map-o float-right" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-1']);"></i>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 statistic-footer">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box" id="Title0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="panel-box  radius"
+                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                <div class="panel-box-content">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box">
+                                            <h6 class="text-white">Manager List
+                                                <i class="fa fa-map-o float-right" data-toggle="popover"
+                                                    title="Good vs. Evil Winrate" data-placement="top"></i>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 statistic-footer">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box" id="Start-Date1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="panel-box  radius"
+                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                <div class="panel-box-content">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box">
+                                            <h6 class="text-white">Funding Source
+                                                <i class="fa fa-map-o float-right" data-toggle="popover"
+                                                    title="Good vs. Evil Winrate" data-placement="top"></i>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 statistic-footer">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box" id="End-Date2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="panel-box radius"
+                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                <div class="panel-box-content">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box">
+                                            <h6 class="text-white">Activity type
+                                                <i class="fa fa-map-o float-right" data-toggle="popover"
+                                                    title="Good vs. Evil Winrate" data-placement="top"></i>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 statistic-footer">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box" id="Budget3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="panel-box  radius"
+                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                <div class="panel-box-content">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box">
+                                            <h6 class="text-white">Target Countries
+                                                <i class="fa fa-map-o float-right" data-toggle="popover"
+                                                    title="Good vs. Evil Winrate" data-placement="top"></i>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 statistic-footer">
+                                    <div class="row">
+                                        <div class="col-12 statistic-box" id="Countries4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <table id="demo" style="display: none;">
         <tbody id="table_body">
             <tr>
@@ -1086,7 +522,7 @@
                 <td>12-02-2020</td>
                 <td>22-12-2024</td>
                 <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
+                <td>UK</td>
                 <td>Closed</td>
                 <td>View</td>
             </tr>
@@ -1095,7 +531,7 @@
                 <td>12-02-2020</td>
                 <td>22-12-2024</td>
                 <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
+                <td>India</td>
                 <td>Established / Pending donor funds</td>
                 <td>View</td>
             </tr>
@@ -1104,7 +540,7 @@
                 <td>12-02-2020</td>
                 <td>22-12-2024</td>
                 <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
+                <td>Brazil</td>
                 <td>Ongoing</td>
                 <td>View</td>
             </tr>
@@ -1113,7 +549,7 @@
                 <td>12-02-2020</td>
                 <td>22-12-2024</td>
                 <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
+                <td>Australia</td>
                 <td>Pending Closure</td>
                 <td>View</td>
             </tr>
@@ -1122,7 +558,7 @@
                 <td>12-02-2020</td>
                 <td>22-12-2024</td>
                 <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
+                <td>South Africa</td>
                 <td>Ongoing</td>
                 <td>View</td>
             </tr>
@@ -1131,7 +567,7 @@
                 <td>12-02-2020</td>
                 <td>22-12-2024</td>
                 <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
+                <td>USA</td>
                 <td>Ongoing</td>
                 <td>View</td>
             </tr>
@@ -1140,7 +576,7 @@
                 <td>12-02-2020</td>
                 <td>22-12-2024</td>
                 <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
+                <td>Pakistan</td>
                 <td>Ongoing</td>
                 <td>View</td>
             </tr>
@@ -1282,24 +718,81 @@
     <script src="js/AdminosJS.js"></script>
     <script src="js/pages-js/dashboard.js"></script>
     <script src="js/dashboardv1.js"></script>
-    <script src="js/table_export/src/tableHTMLExport.js"></script>
-    <script src="js/jsPDF/jspdf.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js"></script> -->
 
-    <script src="js/jsPDF-AutoTable/examples/libs/jspdf.umd.js"></script>
-    <script src="js/jsPDF-AutoTable/dist/jspdf.plugin.autotable.min.js"></script>
 
     <!-- Select2 plugin -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
-    <!-- Select2 plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link type="text/css" href="js/select2/css/select2.min.css" rel="stylesheet">
+    <script src="js/select2/js/select2.min.js"></script>
+
+    <!-- chartjs -->
+    <script src="plugins/chartJS/js/Chart.bundle.js"></script>
+    <script src="plugins/chartJS/js/utils.js"></script>
+
+
 
     <script>
         //popover
-        $(function () {
-            $('[data-toggle="popover"]').popover()
-        })
+        $('[data-toggle="popover"]').popover({
+            html: true,
+            content: '<canvas id="myChart" width="400" height="200"></canvas>',
+        }).on('shown.bs.popover', function () {
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                maxheight: '280px !important',
+                data: {
+                    labels: ["Current", "1-30", "31-60", "61-90", "91+"],
+                    datasets: [{
+                        label: 'Aged Payables',
+                        data: [500, 1000, 1500, 3700, 2500],
+                        backgroundColor: "#0cc0de",
+                        borderColor: "#0cc0de",
+                        borderWidth: 2
+                    }, {
+                        label: 'Aged Receiables',
+                        data: [1000, 1500, 2500, 3500, 2500],
+                        backgroundColor: "#9ACD32",
+                        borderColor: "#9ACD32",
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: true,
+                        position: 'bottom',
+                        labels: {
+                            fontColor: '#71748d',
+                            fontFamily: 'Circular Std Book',
+                            fontSize: 14,
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                fontSize: 14,
+                                fontFamily: 'Circular Std Book',
+                                fontColor: '#71748d',
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                fontSize: 14,
+                                fontFamily: 'Circular Std Book',
+                                fontColor: '#71748d',
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+
+        $('#chart_country').select2({
+            multiple: true,
+            closeOnSelect: false,
+            placeholder: "Select..."
+        });
 
         //table into data Array
         var data = [];
@@ -1311,6 +804,10 @@
         })
         // console.log(data);
 
+        $(document).ready(function (e) {
+            populateProjects(data.filter(function (value) { return value; }));
+
+        })
         //intialize table and properties
         var populateProjects = function (projects) {
             if ($.fn.DataTable.isDataTable('#my_table')) {
@@ -1330,7 +827,7 @@
                             $("#" + title + e).html('')
                         }
                         var column = this;
-                        var select = $('<select id="' + title + '" class="select2 form-control" ></select>')
+                        var select = $('<select id="' + title + '" class="select2 form-control form-control-round" ></select>')
                             .appendTo($("#" + title + e))
                             .on('change', function () {
                                 //Get the "text" property from each selected data 
@@ -1339,15 +836,11 @@
                                     return value.text ? '^' + $.fn.dataTable.util.escapeRegex(value.text) + '$' : null;
                                 });
 
-                                //if no data selected use ""
                                 if (data.length === 0) {
                                     data = [""];
                                 }
 
-                                //join array into string with regex or (|)
                                 var val = data.join('|');
-
-                                //search for the option(s) selected
                                 column
                                     .search(val ? val : '', true, false)
                                     .draw();
@@ -1360,6 +853,7 @@
                         //use column title as selector and placeholder
                         $('#' + title).select2({
                             multiple: true,
+                            dropdownParent: $('#bounce-right .modal-content'),
                             closeOnSelect: false,
                             placeholder: "Select..."
                         });
@@ -1371,7 +865,8 @@
 
                 dom: 'Bfrti',
                 buttons: [
-                    { extend: 'excel', text: 'Export to excel' }
+                    { extend: 'excel', text: 'Excel' },
+                    { extend: 'pdf', text: 'PDF' }
                 ],
                 Language: {
                     Search: "Filter"
@@ -1383,11 +878,6 @@
             });
         };
 
-        //on windows open load default status data
-        $(document).ready(function (e) {
-            populateProjects(data.filter(function (value) { return value[5] === 'Closed'; }));
-
-        })
 
         //Status buttons and its properties
 
@@ -1415,6 +905,86 @@
             populateProjects(data.filter(function (value) { return value[5] === 'Pending Closure'; }));
         })
 
+        if ($('#chartjs_bar').length) {
+            var ctx = document.getElementById("chartjs_bar").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["India", "USA", "Brazil", "Australia", "Canada", "South Africa", "UK", "Pakistan"],
+                    datasets: [{
+                        label: '2020',
+                        data: [50, 19, 3, 17, 28, 24, 7, 11, 13],
+                        backgroundColor: "#17a2b8",
+                        borderColor: "#17a2b8",
+                        borderWidth: 1
+                    }, {
+                        label: '2021',
+                        data: [30, 29, 5, 5, 20, 3, 10, 15, 14],
+                        backgroundColor: "#FF292D",
+                        borderColor: "#FF292D",
+                        borderWidth: 1
+                    }, {
+                        label: '2022',
+                        data: [24, 15, 10, 8, 23, 18, 13, 17, 27],
+                        backgroundColor: "#4E3F6C",
+                        borderColor: "#4E3F6C",
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        yAxes: [{
+                        }]
+                    },
+                    legend: {
+                        display: true,
+                        position: 'top',
+
+                        labels: {
+                            fontColor: '#71748d',
+                            fontFamily: 'Circular Std Book',
+                            fontSize: 14,
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                fontSize: 14,
+                                fontFamily: 'Circular Std Book',
+                                fontColor: '#71748d',
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                fontSize: 14,
+                                fontFamily: 'Circular Std Book',
+                                fontColor: '#71748d',
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+
+        // $(document).ready(function () { 
+        //     myChart.data.labels.push("Pakistan");
+        //     myChart.update()
+        //  })
+
+        $('#chart_country').on('change', function (params) {
+            // myChart.data.labels.pop();
+            // myChart.data.datasets.forEach((dataset) => {
+            //     dataset.data.pop();
+            // });
+            // myChart.update();
+
+            // val = $('#chart_country').val();
+            // myChart.data.labels.push(val);
+            // myChart.update()
+        })
+
     </script>
 </body>
 
@@ -1432,7 +1002,15 @@
         width: 100%;
     }
 
-    .select2-selection--multiple {
+    /* .select2-selection--multiple {
         border-radius: 20px !important;
+    } */
+    .select2 .select2-container .select2-container--default {
+        width: 100% !important;
+    }
+
+    .select2-container {
+        width: 100% !important;
+        padding: 0;
     }
 </style>
