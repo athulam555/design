@@ -282,26 +282,90 @@
                                 <div class="panel-box-title">
                                     <h5>Projects List</h5>
                                     <span style="float: right;">
-                                        <button type="button" class="btn btn-success badge badge-danger float-right"
-                                            data-target="#bounce-right" data-toggle="modal">Filter</button>
+                                        <span class="btn-grad btn-grad_filter" data-target="#bounce-right"
+                                            data-toggle="modal">Filter</span>
                                     </span>
                                 </div>
                                 <div class="panel-box-content p-3">
                                     <div class="dt-responsive table-responsive">
-                                        <table id="my_table"
+                                        <table id="my_tables"
                                             class="table table-striped table-hover table-bordered nowrap">
-                                            <thead>
+                                            <tbody>
                                                 <tr>
-                                                    <th>Title</th>
-                                                    <th>Start Date</th>
-                                                    <th>End Date</th>
-                                                    <th>Budget</th>
-                                                    <th>Countries</th>
-                                                    <th>Status</th>
-                                                    <th>Action</th>
+                                                    <td>Electronic Data Interchange for Administration, Commerce and
+                                                        Transport (UN/EDIFACT)</td>
+                                                    <td>01-03-1990</td>
+                                                    <td>31-12-1950</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td>Established</td>
+                                                    <td>Donor 11 </td>
+                                                    <td>View</td>
                                                 </tr>
-                                            </thead>
-                                            <tbody></tbody>
+                                                <tr>
+                                                    <td>Aarhus Convention</td>
+                                                    <td>01-05-2001</td>
+                                                    <td>31-12-2050</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Donor 24 </td>
+                                                    <td>View</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Internet Enterprise Development</td>
+                                                    <td>01-07-2001</td>
+                                                    <td>31-12-2014</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Donor 73</td>
+                                                    <td>View</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Industrial Accidents Convention</td>
+                                                    <td>01-07-2001</td>
+                                                    <td>31-12-2050</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td>Ongoing</td>
+                                                    <td>Donor 54</td>
+                                                    <td>View</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Popin Activities, UN/DESA, New York</td>
+                                                    <td>12-06-2001</td>
+                                                    <td>31-12-2009</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td>Closed</td>
+                                                    <td>Donor 43</td>
+                                                    <td>View</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UNeDocs : Development of United Nations Electronic Forms for
+                                                        Trade Documents</td>
+                                                    <td>01-09-2001</td>
+                                                    <td>31-12-2014</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td>Pending closure</td>
+                                                    <td>Donor 23</td>
+                                                    <td>View</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Governance Systems in the South Caucasus</td>
+                                                    <td>01-03-2002</td>
+                                                    <td>31-12-2011</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td>Closed</td>
+                                                    <td>Donor 13</td>
+                                                    <td>View</td>
+                                                </tr>
+                                            
+                                               
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
@@ -321,20 +385,23 @@
                                         </div>
                                         <div class="panel-box-content">
                                             <div class="row" style="margin-top: 10px;">
-                                                <div class="col-lg-3 text-center" style="margin: auto;">
+                                                <div class="col-lg-5 text-center" style="margin: auto;left: 23%;">
                                                     <select id="chart_country"
                                                         class="select2 form-control form-control-round">
                                                         <option value="India">India</option>
                                                         <option value="Pakistan">Pakistan</option>
                                                         <option value="UK">UK</option>
                                                         <option value="USA">USA</option>
+                                                        <option value="Brazil">Brazil</option>
+                                                        <option value="Australia">Australia</option>
+                                                        <option value="Canada">Canada</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-lg-3 text-right">
+                                                <div class="col-lg-5 text-right">
                                                     <button type="button" id="fund_chart"
-                                                        class="btn btn-danger badge-danger">Fund</button>
+                                                        class="btn btn-sm btn-danger badge-danger">Fund</button>
                                                     <button type="button" id="count_chart"
-                                                        class="btn btn-danger  badge-danger">Count</button>
+                                                        class="btn btn-sm btn-danger  badge-danger">Count</button>
                                                 </div>
                                             </div>
 
@@ -343,32 +410,53 @@
                                     </div>
                                     <div class="panel-box-footer">
                                         <p class="display-7 font-weight-bold">
-                                            <span class="text-primary d-inline-block">$76,000</span>
-                                            <span class="text-success pull-right">+49.45%</span>
+                                            <!-- <span class="text-primary d-inline-block">$76,000</span>
+                                            <span class="text-success pull-right">+49.45%</span> -->
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-
-                                <!-- Basic Map With Markers start -->
-                                <div class="panel-box">
-                                    <div class="top_menu panel-box-title">
-                                        <h5>Projects and Beneficiary Countries</h5>
-                                        <div class="panel-box-tools">
-                                            <a class="collapse-link">
-                                                <i class="fa fa-chevron-up"></i>
-                                            </a>
-
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <div class="panel-box">
+                                        <div class="top_menu panel-box-title">
+                                            <h5>Donors and Funding</h5>
+                                            <div class="panel-box-tools">
+                                                <a class="collapse-link">
+                                                    <i class="fa fa-chevron-up"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="panel-box-content p-3 bg-sky-line-blue">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <canvas id="dashboard_donor_chart" height="350"></canvas>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <canvas id="dashboard_funding_chart"></canvas>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="panel-box-content p-3 bg-sky-line-blue">
-                                        <div id="vmap" style="width:100%; height:370px;"></div>
-                                    </div>
-
                                 </div>
-                                <!-- Basic Map With Markers end -->
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                                    <!-- Basic Map With Markers start -->
+                                    <div class="panel-box">
+                                        <div class="top_menu panel-box-title">
+                                            <h5>Projects and Beneficiary Countries</h5>
+                                            <div class="panel-box-tools">
+                                                <a class="collapse-link">
+                                                    <i class="fa fa-chevron-up"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="panel-box-content p-3 bg-sky-line-blue">
+                                            <div id="vmap" style="width:100%; height:370px;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Basic Map With Markers end -->
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -398,15 +486,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="row status">
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="panel-box radius"
-                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                style="background-image: linear-gradient(to right, #7474BF 0%, #348AC7  51%, #7474BF  100%)">
                                 <div class="panel-box-content">
                                     <div class="row">
                                         <div class="col-12 statistic-box">
                                             <h6 class="text-white">Donor
-                                                <i class="fa fa-map-o float-right"
-                                                    onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-1']);"></i>
+                                                <i class="fa fa-line-chart float-right" style="cursor: pointer;"
+                                                    data-target="#donor_chart" data-toggle="modal"></i>
                                             </h6>
                                         </div>
                                     </div>
@@ -419,15 +507,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="panel-box  radius"
-                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                style="background-image: linear-gradient(to right, #7474BF 0%, #348AC7  51%, #7474BF  100%)">
                                 <div class="panel-box-content">
                                     <div class="row">
                                         <div class="col-12 statistic-box">
                                             <h6 class="text-white">Manager List
-                                                <i class="fa fa-map-o float-right" data-toggle="popover"
-                                                    title="Good vs. Evil Winrate" data-placement="top"></i>
+
                                             </h6>
                                         </div>
                                     </div>
@@ -440,15 +527,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="panel-box  radius"
-                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                style="background-image: linear-gradient(to right, #7474BF 0%, #348AC7  51%, #7474BF  100%)">
                                 <div class="panel-box-content">
                                     <div class="row">
                                         <div class="col-12 statistic-box">
                                             <h6 class="text-white">Funding Source
-                                                <i class="fa fa-map-o float-right" data-toggle="popover"
-                                                    title="Good vs. Evil Winrate" data-placement="top"></i>
+                                                <i class="fa fa-line-chart float-right" style="cursor: pointer;"
+                                                    data-target="#funding_chart" data-toggle="modal"></i>
                                             </h6>
                                         </div>
                                     </div>
@@ -461,15 +548,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="panel-box radius"
-                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                style="background-image: linear-gradient(to right, #7474BF 0%, #348AC7  51%, #7474BF  100%)">
                                 <div class="panel-box-content">
                                     <div class="row">
                                         <div class="col-12 statistic-box">
                                             <h6 class="text-white">Activity type
-                                                <i class="fa fa-map-o float-right" data-toggle="popover"
-                                                    title="Good vs. Evil Winrate" data-placement="top"></i>
+
                                             </h6>
                                         </div>
                                     </div>
@@ -482,15 +568,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="panel-box  radius"
-                                style="background: linear-gradient(to right, #2193b0 , #6dd5ed);">
+                                style="background-image: linear-gradient(to right, #7474BF 0%, #348AC7  51%, #7474BF  100%)">
                                 <div class="panel-box-content">
                                     <div class="row">
                                         <div class="col-12 statistic-box">
                                             <h6 class="text-white">Target Countries
-                                                <i class="fa fa-map-o float-right" data-toggle="popover"
-                                                    title="Good vs. Evil Winrate" data-placement="top"></i>
+                                                <i class="fa fa-line-chart float-right" style="cursor: pointer;"
+                                                    data-target="#targetCountry_chart" data-toggle="modal"></i>
                                             </h6>
                                         </div>
                                     </div>
@@ -506,179 +592,52 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Search</button>
+                    <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="modal fade" id="donor_chart" role="dialog" aria-hidden="true" aria-labelledby="mediumModalLabel"
+        style="display: none;">
+        <div class="modal-dialog modal-ml" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mediumModalLabel">Donor Chart</h5>
+                    <button class="close" aria-label="Close" type="button" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="../Adminos_SEED_Project/donor_char.html" width="100%" height="400px"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm btn-primary" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <table id="demo" style="display: none;">
-        <tbody id="table_body">
-            <tr>
-                <td>Athul</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Manu</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>UK</td>
-                <td>Closed</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>India</td>
-                <td>Established / Pending donor funds</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>jithin</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Brazil</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Australia</td>
-                <td>Pending Closure</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>appu</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>South Africa</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>ramu</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>USA</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>sonu</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Pakistan</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>kesu</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Closed</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Established / Pending donor funds</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Athul</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Athul</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Pending Closure</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Pending Closure</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Pending Closure</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>12-02-2020</td>
-                <td>22-12-2024</td>
-                <td>2500.0</td>
-                <td>Canada, United Kingdom</td>
-                <td>Ongoing</td>
-                <td>View</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="modal fade" id="funding_chart" role="dialog" aria-hidden="true" aria-labelledby="mediumModalLabel"
+        style="display: none;">
+        <div class="modal-dialog modal-ml" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mediumModalLabel">Donor Chart</h5>
+                    <button class="close" aria-label="Close" type="button" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="../Adminos_SEED_Project/funding_chart.html" width="100%" height="400px"></iframe>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm btn-primary" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Mainly scripts -->
     <script src="plugins/jquery/jquery-3.1.1.min.js"></script>
@@ -738,62 +697,6 @@
 
 
     <script>
-        //popover
-        $('[data-toggle="popover"]').popover({
-            html: true,
-            content: '<canvas id="myChart" width="400" height="200"></canvas>',
-        }).on('shown.bs.popover', function () {
-            var ctx = document.getElementById("myChart").getContext('2d');
-            var myChart = new Chart(ctx, {
-                type: 'bar',
-                maxheight: '280px !important',
-                data: {
-                    labels: ["Current", "1-30", "31-60", "61-90", "91+"],
-                    datasets: [{
-                        label: 'Aged Payables',
-                        data: [500, 1000, 1500, 3700, 2500],
-                        backgroundColor: "#0cc0de",
-                        borderColor: "#0cc0de",
-                        borderWidth: 2
-                    }, {
-                        label: 'Aged Receiables',
-                        data: [1000, 1500, 2500, 3500, 2500],
-                        backgroundColor: "#9ACD32",
-                        borderColor: "#9ACD32",
-                        borderWidth: 2
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    legend: {
-                        display: true,
-                        position: 'bottom',
-                        labels: {
-                            fontColor: '#71748d',
-                            fontFamily: 'Circular Std Book',
-                            fontSize: 14,
-                        }
-                    },
-                    scales: {
-                        xAxes: [{
-                            ticks: {
-                                fontSize: 14,
-                                fontFamily: 'Circular Std Book',
-                                fontColor: '#71748d',
-                            }
-                        }],
-                        yAxes: [{
-                            ticks: {
-                                fontSize: 14,
-                                fontFamily: 'Circular Std Book',
-                                fontColor: '#71748d',
-                            }
-                        }]
-                    }
-                }
-            });
-        });
 
         $('#chart_country').select2({
             multiple: true,
@@ -803,7 +706,7 @@
 
         //table into data Array
         var data = [];
-        $("#demo tr").each(function (i, v) {
+        $("#my_tables tbody tr").each(function (i, v) {
             data[i] = [];
             $(this).children('td').each(function (ii, vv) {
                 data[i][ii] = $(this).text();
@@ -812,23 +715,40 @@
         // console.log(data);
 
         $(document).ready(function (e) {
-            populateProjects(data.filter(function (value) { return value; }));
+            populateProjects(data.filter(function (value) {
+                // console.log(value);
+                return value
+            }));
 
         })
         //intialize table and properties
+
         var populateProjects = function (projects) {
-            if ($.fn.DataTable.isDataTable('#my_table')) {
-                $('#my_table').DataTable().destroy();
+            if ($.fn.DataTable.isDataTable('#my_tables')) {
+                $('#my_tables').DataTable().destroy();
             }
-            $('#my_table').DataTable({
+            $('#my_tables').DataTable({
                 processing: true,
                 data: projects,
+                columns: [
+                    { data: '0', title: 'Title', visible : false },
+                    { data: '1', title: 'Start Date' },
+                    { data: '2', title: 'End Date' },
+                    { data: '3', title: 'Budget' },
+                    { data: '4', title: 'Countries' },
+                    { data: '5', title: 'Donor' },
+                    { data: '6', title: 'Status'  },
+                    { data: '7', title: 'Action' }
+
+                ],
                 initComplete: function () {
                     count = 0;
-                    this.api().columns([0, 1, 2, 3, 4]).every(function (e) {
+                    this.api().columns([0, 1, 2, 3, 4, 5, 6]).every(function (e) {
                         var title = this.header();
                         //replace spaces with dashes
                         title = $(title).html().replace(/[\W]/g, '-');
+
+                        console.log(title);
 
                         if ($("#" + title + e).text().length > 0) {
                             $("#" + title + e).html('')
@@ -837,8 +757,7 @@
                         var select = $('<select id="' + title + '" class="select2 form-control form-control-round" ></select>')
                             .appendTo($("#" + title + e))
                             .on('change', function () {
-                                //Get the "text" property from each selected data 
-                                //regex escape the value and store in array
+
                                 var data = $.map($(this).select2('data'), function (value, key) {
                                     return value.text ? '^' + $.fn.dataTable.util.escapeRegex(value.text) + '$' : null;
                                 });
@@ -870,17 +789,33 @@
                     });
                 },
 
-                dom: 'Bfrti',
+                // dom: 'Bfrti',
                 buttons: [
-                    { extend: 'excel', text: 'Excel' },
-                    { extend: 'pdf', text: 'PDF' }
+                    {
+                        extend: "excel",
+                        className: "btn-excel btn-grad_filter",
+                        titleAttr: 'Export in Excel',
+                        text: 'Excel',
+                        init: function (api, node, config) {
+                            $(node).removeClass('dt-button buttons-excel buttons-html5')
+                        }
+                    },
+                    {
+                        extend: "pdf",
+                        className: "btn-pdf btn-grad_filter",
+                        titleAttr: 'Export in PDF',
+                        text: 'PDF',
+                        init: function (api, node, config) {
+                            $(node).removeClass('dt-button buttons-excel buttons-html5')
+                        }
+                    }
                 ],
                 Language: {
                     Search: "Filter"
                 },
-                scrollY: '50vh',
-                scrollCollapse: true,
-                paging: false,
+                // scrollY: '50vh',
+                // scrollCollapse: true,
+                // paging: false,
                 searching: true
             });
         };
@@ -891,7 +826,7 @@
         $('#searchButtonEstablished_new').on('click', function (e) {
             $('.actve_tab').removeClass('actve_tab');
             $('.established_tab').addClass('actve_tab');
-            populateProjects(data.filter(function (value) { return value[5] === 'Established / Pending donor funds'; }));
+            populateProjects(data.filter(function (value) { return value[5] === 'Established'; }));
         })
 
         $('#searchButtonOngoing_new').on('click', function (e) {
@@ -909,93 +844,9 @@
         $('#searchButtonClosure_new').on('click', function (e) {
             $('.actve_tab').removeClass('actve_tab');
             $('.pending_tab').addClass('actve_tab');
-            populateProjects(data.filter(function (value) { return value[5] === 'Pending Closure'; }));
+            populateProjects(data.filter(function (value) { return value[5] === 'Pending closure'; }));
         })
 
-        // if ($('#chartjs_bar').length) {
-        //     var ctx = document.getElementById("chartjs_bar").getContext('2d');
-        //     var myChart = new Chart(ctx, {
-        //         type: 'bar',
-        //         data: {
-        //             labels: ["India", "USA", "Brazil", "Australia", "Canada", "South Africa", "UK", "Pakistan"],
-        //             datasets: [{
-        //                 label: '2020',
-        //                 data: [50, 19, 3, 17, 28, 24, 7, 11, 13],
-        //                 backgroundColor: "#17a2b8",
-        //                 borderColor: "#17a2b8",
-        //                 borderWidth: 1
-        //             }, {
-        //                 label: '2021',
-        //                 data: [30, 29, 5, 5, 20, 3, 10, 15, 14],
-        //                 backgroundColor: "#FF292D",
-        //                 borderColor: "#FF292D",
-        //                 borderWidth: 1
-        //             }, {
-        //                 label: '2022',
-        //                 data: [24, 15, 10, 8, 23, 18, 13, 17, 27],
-        //                 backgroundColor: "#4E3F6C",
-        //                 borderColor: "#4E3F6C",
-        //                 borderWidth: 1
-        //             }]
-        //         },
-        //         options: {
-        //             responsive: true,
-        //             maintainAspectRatio: true,
-        //             scales: {
-        //                 yAxes: [{
-        //                 }]
-        //             },
-        //             legend: {
-        //                 display: true,
-        //                 position: 'top',
-
-        //                 labels: {
-        //                     fontColor: '#71748d',
-        //                     fontFamily: 'Circular Std Book',
-        //                     fontSize: 14,
-        //                 }
-        //             },
-        //             scales: {
-        //                 xAxes: [{
-        //                     ticks: {
-        //                         fontSize: 14,
-        //                         fontFamily: 'Circular Std Book',
-        //                         fontColor: '#71748d',
-        //                     }
-        //                 }],
-        //                 yAxes: [{
-        //                     ticks: {
-        //                         fontSize: 14,
-        //                         fontFamily: 'Circular Std Book',
-        //                         fontColor: '#71748d',
-        //                     }
-        //                 }]
-        //             }
-        //         }
-        //     });
-        // }
-
-        // $(document).ready(function () { 
-        //     myChart.data.labels.push("Pakistan");
-        //     myChart.update()
-        //  })
-
-        // function addval() {
-        //     console.log('ee');
-        //     val = $('#chart_country').val();
-        //     myChart.data.labels.push(val);
-        //     myChart.update()
-        // }
-
-        // $('#chart_country').on('change', function (params) {
-        //     // myChart.data.labels.pop();
-        //     // myChart.data.datasets.forEach((dataset) => {
-        //     //     dataset.data.pop();
-        //     // });
-        //     // myChart.update();
-
-        //     val = $('#chart_country').val();
-        // })
 
 
         var country = ["India", "USA", "Brazil", "Australia", "Canada", "South Africa", "UK", "Pakistan"];
@@ -1011,20 +862,20 @@
                 datasets: [{
                     label: '2020',
                     data: data_2020,
-                    backgroundColor: "#17a2b8",
-                    borderColor: "#17a2b8",
+                    backgroundColor: "#9dd866",
+                    borderColor: "#9dd866",
                     borderWidth: 1
                 }, {
                     label: '2021',
                     data: data_2021,
-                    backgroundColor: "#FF292D",
-                    borderColor: "#FF292D",
+                    backgroundColor: "#ca472f",
+                    borderColor: "#ca472f",
                     borderWidth: 1
                 }, {
                     label: '2022',
                     data: data_2022,
-                    backgroundColor: "#4E3F6C",
-                    borderColor: "#4E3F6C",
+                    backgroundColor: "#0b84a5",
+                    borderColor: "#0b84a5",
                     borderWidth: 1
                 }]
             },
@@ -1035,7 +886,7 @@
                     yAxes: [{
                         scaleLabel: {
                             display: true,
-                            labelString: 'Fund'
+                            labelString: 'Fund ( $ )'
                         }
                     }],
                     xAxes: [{
@@ -1050,7 +901,8 @@
                     position: 'top',
                     labels: {
                         filter: function (legendItem, data) {
-                            return legendItem.index != 1
+                            return data.labels[1]
+                            // return console.log(data.labels[1]);
                         }
                     }
                 },
@@ -1073,6 +925,26 @@
                         });
                     }
                 },
+                tooltips: {
+                    titleMarginBottom: 10,
+                    titleFontColor: "#6e707e",
+                    titleFontSize: 14,
+                    backgroundColor: "rgb(255,255,255)",
+                    bodyFontColor: "#858796",
+                    borderColor: "#dddfeb",
+                    borderWidth: 1,
+                    xPadding: 15,
+                    yPadding: 15,
+                    displayColors: false,
+                    caretPadding: 10,
+                    callbacks: {
+                        label: function (tooltipItem, chart) {
+                            var datasetLabel =
+                                chart.datasets[tooltipItem.datasetIndex].label || "";
+                            return datasetLabel + ": $ " + tooltipItem.yLabel;
+                        }
+                    }
+                },
             }
         }
 
@@ -1086,7 +958,7 @@
             data.datasets[1].data = data_2021;
             data.datasets[2].data = data_2022;
             data.labels = country;
-            mychart.config.options.scales.yAxes[0].scaleLabel.labelString = 'Fund'
+            mychart.config.options.scales.yAxes[0].scaleLabel.labelString = 'Fund ($)'
             mychart.update();
         });
 
@@ -1106,6 +978,184 @@
             mychart.update();
         });
 
+        $(document).ready(function () {
+            $('#chart_country').on('change', function (e) {
+
+                const datas = {
+                    'India': {
+                        '2020': 21,
+                        '2021': 10,
+                        '2022': 30,
+                    },
+                    'USA': {
+                        '2020': 21,
+                        '2021': 10,
+                        '2022': 30,
+                    },
+                    'Brazil': {
+                        '2020': 21,
+                        '2021': 10,
+                        '2022': 30,
+                    },
+                    'Australia': {
+                        '2020': 21,
+                        '2021': 10,
+                        '2022': 30,
+                    },
+                    'Canada': {
+                        '2020': 21,
+                        '2021': 10,
+                        '2022': 30,
+                    },
+                    'UK': {
+                        '2020': 21,
+                        '2021': 10,
+                        '2022': 30,
+                    },
+                    'Pakistan': {
+                        '2020': 31,
+                        '2021': 10,
+                        '2022': 30,
+                    },
+                }
+
+                var val = $(this).val();
+                console.log(datas);
+                var datas_val = val;
+                let indexArr = datas_val.map(i => datas[i]);
+                var data_2020 = [];
+
+
+                $.each(indexArr, function (indexInArray, valueOfElement) {
+                    data_2020.push(valueOfElement[2020]);
+                    data_2021.push(valueOfElement[2021]);
+                    data_2022.push(valueOfElement[2022]);
+                });
+
+                var country = val;
+
+                var data = mychart.config.data;
+                data.datasets[0].data = data_2020;
+                data.datasets[1].data = data_2021;
+                data.datasets[2].data = data_2022;
+                data.labels = country;
+                mychart.update();
+            });
+        });
+
+        var ctx = document.getElementById('dashboard_donor_chart').getContext('2d');
+        var smyChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Donor 1', 'Donor 2', 'Donor 3', 'Donor 4', 'Donor 5', 'Donor 6', 'Donor 7'],
+                datasets: [{
+                    label: '2020',
+                    data: [12, 19, 3, 17, 6, 3, 7],
+                    backgroundColor: "#17a2b8",
+                    borderColor: "#1E90FF",
+                    borderWidth: 2
+                }, {
+                    label: '2021',
+                    data: [2, 29, 5, 5, 2, 3, 10],
+                    backgroundColor: "#fd7e14",
+                    borderColor: "#D2691E",
+                    borderWidth: 2
+                },
+                {
+                    label: '2022',
+                    data: [6, 11, 13, 9, 5, 14, 7],
+                    backgroundColor: "#295bdc",
+                    borderColor: "#295bdc",
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: false,
+                    position: 'bottom',
+                    labels: {
+                        fontColor: '#71748d',
+                        fontFamily: 'Circular Std Book',
+                        fontSize: 14,
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontSize: 14,
+                            fontFamily: 'Circular Std Book',
+                            fontColor: '#71748d',
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            fontSize: 14,
+                            fontFamily: 'Circular Std Book',
+                            fontColor: '#71748d',
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctx = document.getElementById('dashboard_funding_chart').getContext('2d');
+        var smyChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Donor 1', 'Donor 2', 'Donor 3', 'Donor 4', 'Donor 5', 'Donor 6', 'Donor 7'],
+                datasets: [{
+                    label: '2020',
+                    data: [12, 19, 3, 17, 6, 3, 7],
+                    backgroundColor: "#ffa600",
+                    borderColor: "#ffa600",
+                    borderWidth: 2
+                }, {
+                    label: '2021',
+                    data: [2, 29, 5, 5, 2, 3, 10],
+                    backgroundColor: "#003f5c",
+                    borderColor: "#003f5c",
+                    borderWidth: 2
+                },
+                {
+                    label: '2022',
+                    data: [6, 11, 13, 9, 5, 14, 7],
+                    backgroundColor: "#295bdc",
+                    borderColor: "#295bdc",
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: false,
+                    position: 'bottom',
+                    labels: {
+                        fontColor: '#71748d',
+                        fontFamily: 'Circular Std Book',
+                        fontSize: 14,
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontSize: 14,
+                            fontFamily: 'Circular Std Book',
+                            fontColor: '#71748d',
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            fontSize: 14,
+                            fontFamily: 'Circular Std Book',
+                            fontColor: '#71748d',
+                        }
+                    }]
+                }
+            }
+        });
 
     </script>
 </body>
@@ -1113,6 +1163,38 @@
 </html>
 
 <style>
+    .btn-grad {
+        background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%)
+    }
+
+    .btn-pdf {
+        background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%)
+    }
+
+    .btn-excel {
+        background-image: linear-gradient(to right, #1D976C 0%, #93F9B9 51%, #1D976C 100%)
+    }
+
+    .btn-grad_filter {
+        text-align: center;
+        transition: 1.0s;
+        padding: 0 20px;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 5px #eee;
+        border-radius: 1px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .btn-grad:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
+
+
     .actve_tab {
         background: linear-gradient(to right, #0cea1d, #90fed0);
     }

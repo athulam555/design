@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UNECE | Admin Dashboard</title>
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fontawesome CSS -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!--  Feather Icon CSS -->
+    <link href="icon/feather/css/feather.css" rel="stylesheet">
+    <!-- Toastr style -->
+    <link href="plugins/toastr/toastr.min.css" rel="stylesheet">
+    <!-- Gritter -->
+    <link href="plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <!--mCustomScrollbar CSS-->
+    <link href="plugins/jquery.mCustomScrollbar/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <!-- Animate CSS-->
+    <link href="plugins/animate/css/animate.css" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link href="plugins/iCheck/custom.css" rel="stylesheet">
+    <!--Vector Map CSS-->
+    <link rel="stylesheet" href="plugins/jqvmap/css/jqvmap.css">
+    <!-- Jquery-ui-->
+    <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.css">
+    <!-- Jquery-ui-->
+    <link rel="stylesheet" href="img/flag-icon-css/css/flag-icon.css">
+    <!-- Custom CSS Style-->
+    <link href="css/style.css" rel="stylesheet">
+    
+
+</head>
+    <body>
+        <canvas id="chartjs_line"></canvas>
+    </body>
+
+    <script src="plugins/jquery/jquery-3.1.1.min.js"></script>
+    <script src="plugins/jquery-cookie/jquery.cookie.js"></script>
+    <script src="plugins/popper/popper.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="plugins/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+  
+
+
+
+    <!-- chartjs -->
+    <script src="plugins/chartJS/js/Chart.bundle.js"></script>
+    <script src="plugins/chartJS/js/utils.js"></script>
+    <script src="plugins/chartJS/js/utils.js"></script>
+
+    <script>
+        var ctx = document.getElementById('chartjs_line').getContext('2d');
+        var smyChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Donor 1', 'Donor 2', 'Donor 3', 'Donor 4', 'Donor 5', 'Donor 6', 'Donor 7'],
+                datasets: [{
+                    label: '2020',
+                    data: [12, 19, 3, 17, 6, 3, 7],
+                    backgroundColor: "#ffa600",
+                    borderColor: "#ffa600",
+                    borderWidth: 2
+                }, {
+                    label: '2021',
+                    data: [2, 29, 5, 5, 2, 3, 10],
+                    backgroundColor: "#003f5c",
+                    borderColor: "#003f5c",
+                    borderWidth: 2
+                },
+                {
+                    label: '2022',
+                    data: [6, 11, 13, 9, 5, 14, 7],
+                    backgroundColor: "#295bdc",
+                    borderColor: "#295bdc",
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: false,
+                    position: 'bottom',
+                    labels: {
+                        fontColor: '#71748d',
+                        fontFamily: 'Circular Std Book',
+                        fontSize: 14,
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontSize: 14,
+                            fontFamily: 'Circular Std Book',
+                            fontColor: '#71748d',
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            fontSize: 14,
+                            fontFamily: 'Circular Std Book',
+                            fontColor: '#71748d',
+                        }
+                    }]
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
